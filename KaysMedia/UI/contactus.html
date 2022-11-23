@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp and Login</title>
+    <link rel="stylesheet" type="text/css" href="css/contact_us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="images/Kays Media LogO AND TEXT.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="signlog.html">Join Us</a></li>
+        </ul>
+      </div>
+
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="">
+            <h1>Contact Us</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>
+              Address: 43 Simon rd ParkTown Waterfalls Harare <br />
+              Cell: +263 71 602 7115 <br />
+              <a href="ntkaysmedia@gmail.com">Email: ntkaysmedia@gmail.com</a>
+            </p>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>About Us</h1>
+            <p>
+              KaysMedia is a media company brought up from the rubble by a man
+              named Nyashadzashe T Katsidzira in the year 2019 ever since it's
+              birth the company's focus was to produce world class content and
+              ensure customer satisfaction It is also in our stride that we want
+              to revolutionize the Zimbabwean production industry. <br />
+              <i><strong>KaysMedia</strong> live life in color</i>
+            </p>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>To know more About us click the button below</p>
+              <button class="ghost" id="signIn"><span></span>About Us</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Get in touch with us click the button below</p>
+              <button class="ghost" id="signUp"><span></span>Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        const signUpButton = document.getElementById("signUp");
+        const signInButton = document.getElementById("signIn");
+        const container = document.getElementById("container");
+
+        signUpButton.addEventListener("click", () => {
+          container.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener("click", () => {
+          container.classList.remove("right-panel-active");
+        });
+      </script>
+    </div>
+  </body>
+</html>

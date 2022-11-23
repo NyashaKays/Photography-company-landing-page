@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>KaysMedia</title>
+    <link rel="stylesheet" href="css/catalogue.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="images/Kays Media LogO AND TEXT.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li><a href="signlog.html">Join Us</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="container" id="container">
+        <div class="form-container sign-up-container"></div>
+        <div class="form-container sign-in-container"></div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Outdoor Shoot!</h1>
+              <p>The best of what mother nature has to offer</p>
+              <button class="ghost" id="signIn">View</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Indoor Shoot!</h1>
+              <p>
+                Don't like the outdoors? <br />
+                Check out our world class studio
+              </p>
+              <button class="ghost" id="signUp">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="bookings.html"
+        ><button class="Bookings_button">Book Now</button></a
+      >
+    </div>
+
+    <script type="text/javascript">
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+      });
+    </script>
+  </body>
+</html>
